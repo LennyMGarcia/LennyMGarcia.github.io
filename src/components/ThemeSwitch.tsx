@@ -1,9 +1,14 @@
+"use client";
 import * as React from 'react';
 import Switch from '@mui/material/Switch';
 import useThemeStore from '@/stores/ThemeStore';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { styled } from '@mui/material/styles';
+
+const initialState = {
+  isThemeChecked: typeof window !== "undefined" ? window.localStorage.getItem('isThemeChecked') : false,
+};
 
 const IconSwitch = styled(Switch)(({ theme }) => ({
   '& .MuiSwitch-switchBase': {
@@ -38,7 +43,7 @@ export default function ControlledSwitches() {
 
   return (
     <IconSwitch
-      checked={localStorage.getItem("isThemeChecked") === "true" ? true : false}
+      checked={initialState.isThemeChecked === "true" ? true : false}
       onChange={handleChange}
       inputProps={{ 'aria-label': 'controlled' }}
       icon={<DarkModeIcon/>}
