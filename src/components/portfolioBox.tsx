@@ -72,7 +72,7 @@ export const PortfolioBox = ({
         <Typography
           variant="body1"
           sx={{
-            fontSize: { xs: "0.65rem", sm: "1rem" }
+            fontSize: { xs: "0.68rem", sm: "1rem" }
           }}
         >
           {content}

@@ -28,7 +28,6 @@ import BarChartIcon from '@mui/icons-material/BarChart';
 import { PortfolioBox } from "@/components/portfolioBox";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import Footer from "@/components/Footer";
 
 
@@ -192,11 +191,11 @@ export default function Home() {
     <>
       <Box component={"section"} id={"home"} sx={{ width: "100vw", maxWidth: "100vw", overflowX: "hidden", }}>
 
-        <Paper sx={{ height: "auto", padding: "6rem", paddingBottom: "0", overflow: "hidden" }}>
+        <Paper sx={{ height: "auto", padding: { xs: "1rem", sm: "2rem", md: "5rem" }, paddingBottom: { xs: "0rem", sm: "0rem", md: "0rem" }, paddingTop: { xs: "3rem", sm: "2rem", md: "5rem" }, overflow: "hidden" }}>
           <Grid container>
             <Grid item xs={12} md={6} sx={{ marginTop: "-2rem" }}>
               <Typography variant="h4" color="primary">Lenny Garcia</Typography>
-              <Typography variant="h6" sx={{ paddingRight: "5rem" }}>Fullstack Dev. and Data Analyst</Typography>
+              <Typography variant="h6" sx={{ paddingRight: { xs: "0.5rem", sm: "1rem", md: "5rem" }}}>Fullstack Dev. and Data Analyst</Typography>
               <Typography variant="body1" sx={{ marginTop: "1rem" }}>
                 As a versatile Full Stack Developer and Data Analyst, I deliver impactful solutions that drive business success.
               </Typography>
