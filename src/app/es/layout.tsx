@@ -25,7 +25,7 @@ export default function RootLayout({
   children,
   locale,
 }: RootLayoutProps) {
-  const navItems = ["home",  "sobre mi", "habilidades", "portafolio", "experiencias", "contactame", ];
+  const navItems = ["home",  "sobre mi", "habilidades", "portafolio", "certificados", "contactame", ];
 
   return (
     <html lang={locale}>

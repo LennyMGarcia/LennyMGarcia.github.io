@@ -49,9 +49,6 @@ export default function DrawerAppBar({navItems}:{navItems:string[]}, props: Prop
     router.push(`${pathname}#${link}`);
   };
 
-  const handleChangeTheme = () => {
-      
-  }
 
   const drawer = (
     <Box component={"header"} onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>

@@ -94,35 +94,8 @@ export default function ExperiencesStepper({steps}:{steps:ISteps[]}) {
             {Array.isArray(steps) ? (
                 steps.map((step: ISteps) => (
                   <Step key={step.label} active={true}>
-                    <Grid container alignItems="center">
+                    <Grid container alignItems="center" >
                       <Grid item xs={12} sx={{ position: 'relative' }}>
-                        <Box sx={{ position: 'absolute', left: '-11vh', top: '0.8rem', }}>
-                          <Box sx={{
-                           position: "relative",
-                            width: "28px",
-                            height: "20px",
-                            borderTopLeftRadius:"50%",
-                            borderBottomLeftRadius:"50%",
-                            background: theme.palette.background.default,
-                            display:"flex",
-                            justifyContent:"center",
-                            alignItems:"center",
-                            "&::after": {
-                              content: "''",
-                              position: "absolute",
-                              top: "0",
-                              right: "-22px",  
-                              width: "0",
-                              height: "0",
-                              borderTop: "10px solid transparent",
-                              borderBottom: "10px solid transparent",
-                              borderLeft: `22px solid ${theme.palette.background.default}`,  
-                            },
-                          }}>
-                            <Typography variant="overline" sx={{padding:"0.2rem 0 0 0.9rem", zIndex:"2"}}>{step.date}</Typography>
-                          </Box>
-        
-                        </Box>
                         <StepLabel StepIconComponent={QontoStepIcon} sx={{ paddingLeft: "0.3rem" }}>
                           <Typography variant="h6" sx={{fontWeight:"bold" }}>{step.label}</Typography>
                         </StepLabel>

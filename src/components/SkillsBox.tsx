@@ -5,10 +5,12 @@ import Typography from "@mui/material/Typography";
 import Image from "next/image";
 
 export default function SkillsBox({
-    img,
+    icon,
+    header,
     text
   }: {
-    img: string,
+    icon: React.ReactNode,
+    header: string,
     text: string,
   }
   ) {
@@ -17,18 +19,16 @@ export default function SkillsBox({
       <Paper sx={{
         borderRadius: "0.5rem",
         margin: "2rem",
-        width: "15rem",
-        height: "15rem",
-        display: "grid",
-        gap: "0",
-        justifyContent: "center",
-        alignItems: "center",
-        "&:hover":{
-          backgroundColor:theme.palette.action.hover
-        }
+        width: "20rem",
+        height: "16rem",
+        padding:"2rem",
       }}>
-        <img alt="" src={img}  width={112} height={112}/>
-        <Typography sx={{ textAlign: "center", marginTop: "-2rem" }} variant="subtitle2">{text}</Typography>
+        {/* <img alt="" src={img}  width={112} height={112}/> */}
+
+        {/* <StackedLineChartIcon sx={{color: theme.palette.primary.main}}/> */}
+        {icon}
+        <Typography sx={{ color:"primary" }} variant="h6">{header}</Typography>
+        <Typography variant="subtitle2">{text}</Typography>
       </Paper>
     )
   }
