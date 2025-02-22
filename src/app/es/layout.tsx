@@ -35,7 +35,6 @@ export default function RootLayout({
             <CssBaseline/>
           <Header  navItems={navItems}/>
             {children}
-          <Footer message={"Gracias por ver"}/>
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>

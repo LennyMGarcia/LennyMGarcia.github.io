@@ -29,6 +29,7 @@ import { PortfolioBox } from "@/components/portfolioBox";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -186,7 +187,7 @@ export default function Home() {
 
   return (
     <>
-      <Box component={"section"} id={"home"} sx={{ width: "100vw", maxWidth: "100vw", overflowX: "hidden", }}>
+      <Box component={"section"} id={"home"} sx={{ width: "100vw", maxWidth: "100vw", minHeight: "100vh", overflowX: "hidden", }}>
 
 <Paper sx={{ height: "auto", padding: "6rem", paddingBottom: "0", overflow: "hidden" }}>
   <Grid container>
@@ -223,7 +224,7 @@ export default function Home() {
 </Paper>
 
 
-        <Box component={"section"} id={"about"} sx={{ padding: "5rem 6vw" }}>
+        <Box component={"section"} id={"sobre%20mi"} sx={{ padding: "5rem 6vw" }}>
           <Typography variant="h4" sx={{ fontWeight: "bold" }}>
             Sobre mi
           </Typography>
@@ -239,7 +240,7 @@ También tengo experiencia en bases de datos SQL y NoSQL, optimizando el almacen
           </Box>
         </Box>
 
-        <Box component={"section"} id={"skills"} sx={{ width: "100vw", }}>
+        <Box component={"section"} id={"habilidades"} sx={{ width: "100vw", }}>
           <Typography variant="subtitle1" color="primary" sx={{ textAlign: "center", fontWeight: "bold" }}>
             Mis habilidades
           </Typography>
@@ -259,7 +260,7 @@ También tengo experiencia en bases de datos SQL y NoSQL, optimizando el almacen
           </Box>
         </Box>
 
-        <Box component={"section"} id={"portfolio"}>
+        <Box component={"section"} id={"portafolio"}>
           <Typography variant="h4" sx={{ textAlign: "center", fontWeight: "bold" }}>
             Portafolio
           </Typography>
@@ -304,7 +305,7 @@ También tengo experiencia en bases de datos SQL y NoSQL, optimizando el almacen
 
         </Box>
 
-        <Box component={"section"} id={"experiences"} sx={{ marginTop: "5rem", }}>
+        <Box component={"section"} id={"certificados"} sx={{ marginTop: "5rem", }}>
           <Typography variant="h4" sx={{ fontWeight: "bold", margin: "-1.5rem 2rem", }}>
             Certificados
           </Typography>
@@ -343,7 +344,7 @@ También tengo experiencia en bases de datos SQL y NoSQL, optimizando el almacen
 
         </Box>
 
-        <Box component={"section"} id={"contact"} sx={{ width: "100vw", }}>
+        <Box component={"section"} id={"contactame"} sx={{ width: "100vw", }}>
           <Typography variant="h4" sx={{ textAlign: "center", fontWeight: "bold", marginTop: "-1rem" }}>
             Contactame
           </Typography>
@@ -410,7 +411,7 @@ También tengo experiencia en bases de datos SQL y NoSQL, optimizando el almacen
             },
           }} />
         </Box>
-
+        <Footer message={"Gracias por ver"}/>
       </Box>
 
     </>

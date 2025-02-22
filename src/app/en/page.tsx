@@ -29,6 +29,7 @@ import { PortfolioBox } from "@/components/portfolioBox";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -413,7 +414,7 @@ export default function Home() {
             },
           }} />
         </Box>
-
+       <Footer message={"Thanks for watching"}/>
       </Box>
 
     </>

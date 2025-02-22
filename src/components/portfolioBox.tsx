@@ -17,16 +17,16 @@ export const PortfolioBox = ({
     <Box
       sx={{
         position: "relative",
-        margin: "2rem auto", 
-        width: "100%", 
-        maxWidth: "45rem", 
-        height: "auto", 
+        margin: "2rem auto",
+        width: "100%",
+        maxWidth: "45rem",
+        height: "auto",
         cursor: "pointer",
         overflow: "hidden",
         "& img": {
           width: "100%",
-          height: "auto", 
-          objectFit: "cover", 
+          height: "auto",
+          objectFit: "cover",
         },
         "&:hover .hover-content": {
           opacity: 1,
@@ -51,35 +51,51 @@ export const PortfolioBox = ({
           alignItems: "center",
           justifyContent: "center",
           textAlign: "center",
-          padding: "1rem", 
+          padding: "1rem",
           opacity: 0,
           transform: "translateY(100%)",
           transition: "opacity 0.3s ease, transform 0.3s ease",
           gap: "1rem",
         }}
       >
-        <Typography color="primary" variant="h4" fontWeight="bold">
+        <Typography
+          color="primary"
+          variant="h4"
+          fontWeight="bold"
+          sx={{
+            fontSize: { xs: "0.8rem", sm: "1.5rem", md: "2rem" }
+          }}
+        >
           {header}
         </Typography>
-        <Typography variant="body1">{content}</Typography>
+
+        <Typography
+          variant="body1"
+          sx={{
+            fontSize: { xs: "0.65rem", sm: "1rem" }
+          }}
+        >
+          {content}
+        </Typography>
+
         <Link
           href={link}
           underline="none"
           sx={{
             color: "white",
-            fontSize: "1.2rem",
+            fontSize: { xs: "0.8rem", sm: "0.9rem", md: "1rem" },
             fontWeight: "bold",
             padding: "0.5rem 1rem",
             background: "rgba(255, 255, 255, 0.2)",
             borderRadius: "0.5rem",
-            marginTop: "1rem",
+            marginTop: "0.5rem",
             transition: "background 0.3s",
             "&:hover": {
               background: "rgba(255, 255, 255, 0.4)",
             },
           }}
         >
-          Ver más
+          Link
         </Link>
       </Box>
     </Box>
