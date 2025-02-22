@@ -194,8 +194,8 @@ export default function Home() {
         <Paper sx={{ height: "auto", padding: { xs: "1rem", sm: "2rem", md: "5rem" }, paddingBottom: { xs: "0rem", sm: "0rem", md: "0rem" }, paddingTop: { xs: "3rem", sm: "2rem", md: "5rem" }, overflow: "hidden" }}>
           <Grid container>
             <Grid item xs={12} md={6} sx={{ marginTop: "-2rem" }}>
-              <Typography variant="h4" color="primary">Lenny Garcia</Typography>
-              <Typography variant="h6" sx={{ paddingRight: { xs: "0.5rem", sm: "1rem", md: "5rem" }}}>Fullstack Dev. and Data Analyst</Typography>
+              <Typography variant="h4" color="primary">Lenny García</Typography>
+              <Typography variant="h6" sx={{ paddingRight: { xs: "0.5rem", sm: "1rem", md: "5rem" } }}>Fullstack Dev. and Data Analyst</Typography>
               <Typography variant="body1" sx={{ marginTop: "1rem" }}>
                 As a versatile Full Stack Developer and Data Analyst, I deliver impactful solutions that drive business success.
               </Typography>
@@ -307,7 +307,7 @@ export default function Home() {
 
         </Box>
 
-        <Box component={"section"} id={"experiences"} sx={{ marginTop: "5rem", }}>
+        <Box component={"section"} id={"certificates"} sx={{ marginTop: "5rem", }}>
           <Typography variant="h4" sx={{ fontWeight: "bold", margin: "-1.5rem 2rem", }}>
             Experiences
           </Typography>
@@ -413,7 +413,7 @@ export default function Home() {
             },
           }} />
         </Box>
-       <Footer message={"Thanks for watching"}/>
+        <Footer message={"Thanks for watching"} />
       </Box>
 
     </>

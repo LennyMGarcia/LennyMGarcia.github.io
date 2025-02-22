@@ -189,39 +189,39 @@ export default function Home() {
     <>
       <Box component={"section"} id={"home"} sx={{ width: "100vw", maxWidth: "100vw", minHeight: "100vh", overflowX: "hidden", }}>
 
-<Paper sx={{ height: "auto", padding: "6rem", paddingBottom: "0", overflow: "hidden" }}>
-  <Grid container>
-    <Grid item xs={12} md={6} sx={{ marginTop: "-2rem" }}>
-      <Typography variant="h4" color="primary">Lenny Garcia</Typography>
-      <Typography variant="h6" sx={{ paddingRight: "5rem" }}>Fullstack Dev. y Analista de datos</Typography>
-      <Typography variant="body1" sx={{ marginTop: "1rem" }}>
-      Como desarrollador Full Stack y analista de datos versátil, ofrezco soluciones impactantes que impulsan el éxito empresarial.
-      </Typography>
-    
-      <Grid container spacing={1} sx={{ marginTop: "1rem" }}>
-        <Grid item>
-          <IconButton href="https://www.linkedin.com/in/lenny-manuel-garc%C3%ADa-ram%C3%ADrez-848346312/" target="_blank" color="primary">
-            <LinkedInIcon />
-          </IconButton>
-        </Grid>
-        <Grid item>
-          <IconButton href="https://github.com/LennyMGarcia" target="_blank" color="primary">
-            <GitHubIcon />
-          </IconButton>
-        </Grid>
-        <Grid item>
-          <IconButton sx={{marginTop:"-0.4rem"}} href="https://www.kaggle.com/lennygarca" target="_blank" color="primary">
-            k
-          </IconButton>
-        </Grid>
-      </Grid>
-    </Grid>
-    
-    <Grid item xs={12} md={6} sx={{ display: { xs: "none", md: "block" } }}>
-      <img alt="branch" src={branchImg.src} style={{ filter: "grayscale(100%)", marginTop: "-5rem", width: "42.438rem", height: "22.938rem" }} />
-    </Grid>
-  </Grid>
-</Paper>
+        <Paper sx={{ height: "auto", padding: { xs: "1rem", sm: "2rem", md: "5rem" }, paddingBottom: { xs: "0rem", sm: "0rem", md: "0rem" }, paddingTop: { xs: "3rem", sm: "2rem", md: "5rem" }, overflow: "hidden" }}>
+          <Grid container>
+            <Grid item xs={12} md={6} sx={{ marginTop: "-2rem" }}>
+              <Typography variant="h4" color="primary">Lenny García</Typography>
+              <Typography variant="h6" sx={{ paddingRight: { xs: "0.5rem", sm: "1rem", md: "5rem" } }}>Fullstack Dev. y Analista de datos</Typography>
+              <Typography variant="body1" sx={{ marginTop: "1rem" }}>
+                Como desarrollador Full Stack y analista de datos versátil, ofrezco soluciones impactantes que impulsan el éxito empresarial.
+              </Typography>
+
+              <Grid container spacing={1} sx={{ marginTop: "1rem" }}>
+                <Grid item>
+                  <IconButton href="https://www.linkedin.com/in/lenny-manuel-garc%C3%ADa-ram%C3%ADrez-848346312/" target="_blank" color="primary">
+                    <LinkedInIcon />
+                  </IconButton>
+                </Grid>
+                <Grid item>
+                  <IconButton href="https://github.com/LennyMGarcia" target="_blank" color="primary">
+                    <GitHubIcon />
+                  </IconButton>
+                </Grid>
+                <Grid item>
+                  <IconButton sx={{ marginTop: "-0.4rem" }} href="https://www.kaggle.com/lennygarca" target="_blank" color="primary">
+                    k
+                  </IconButton>
+                </Grid>
+              </Grid>
+            </Grid>
+
+            <Grid item xs={12} md={6} sx={{ display: { xs: "none", md: "block" } }}>
+              <img alt="branch" src={branchImg.src} style={{ filter: "grayscale(100%)", marginTop: "-5rem", width: "42.438rem", height: "22.938rem" }} />
+            </Grid>
+          </Grid>
+        </Paper>
 
 
         <Box component={"section"} id={"sobre%20mi"} sx={{ padding: "5rem 6vw" }}>
@@ -231,11 +231,11 @@ export default function Home() {
           <Box sx={{ display: "flex", }}>
             <HorizontalRuleIcon sx={{ fontSize: "2rem", transform: "scale(1.7, 1)", marginTop: "-0.5rem" }} color="primary" />
             <Typography variant="subtitle1" sx={{ paddingLeft: "1rem" }}>
-            Soy analista de datos y desarrollador Full Stack con experiencia en Python, TypeScript, JavaScript y C#. Me especializo en la creación de aplicaciones web intuitivas y responsivas, además de desarrollar soluciones basadas en datos. Con experiencia práctica en herramientas como Pandas, NumPy, Scikit-learn y Power BI, he trabajado en modelos de aprendizaje automático, sistemas de recomendación (SVD, KNN) y análisis de datos exploratorios para respaldar la toma de decisiones basada en datos.  <br/><br/>
+              Soy analista de datos y desarrollador Full Stack con experiencia en Python, TypeScript, JavaScript y C#. Me especializo en la creación de aplicaciones web intuitivas y responsivas, además de desarrollar soluciones basadas en datos. Con experiencia práctica en herramientas como Pandas, NumPy, Scikit-learn y Power BI, he trabajado en modelos de aprendizaje automático, sistemas de recomendación (SVD, KNN) y análisis de datos exploratorios para respaldar la toma de decisiones basada en datos.  <br /><br />
 
-Además, implementé Knowledge Graphs (GraphDB, Qdrant) y desarrollé Large Language Models (LLM) básicos para la recuperación de información semántica. Mi experiencia en desarrollo web incluye trabajar en proyectos como sistemas de gestión de casos médicos y plataformas de chat en tiempo real, donde me centré en la validación de datos, pruebas unitarias y optimización del rendimiento.<br/><br/>
+              Además, implementé Knowledge Graphs (GraphDB, Qdrant) y desarrollé Large Language Models (LLM) básicos para la recuperación de información semántica. Mi experiencia en desarrollo web incluye trabajar en proyectos como sistemas de gestión de casos médicos y plataformas de chat en tiempo real, donde me centré en la validación de datos, pruebas unitarias y optimización del rendimiento.<br /><br />
 
-También tengo experiencia en bases de datos SQL y NoSQL, optimizando el almacenamiento y la gestión de datos. Mi objetivo es contribuir a equipos dinámicos donde pueda fusionar mi experiencia en aprendizaje automático, análisis de datos y desarrollo completo para impulsar la innovación y agilizar los procesos.
+              También tengo experiencia en bases de datos SQL y NoSQL, optimizando el almacenamiento y la gestión de datos. Mi objetivo es contribuir a equipos dinámicos donde pueda fusionar mi experiencia en aprendizaje automático, análisis de datos y desarrollo completo para impulsar la innovación y agilizar los procesos.
             </Typography>
           </Box>
         </Box>
@@ -411,7 +411,7 @@ También tengo experiencia en bases de datos SQL y NoSQL, optimizando el almacen
             },
           }} />
         </Box>
-        <Footer message={"Gracias por ver"}/>
+        <Footer message={"Gracias por ver"} />
       </Box>
 
     </>
