@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { useTranslations } from "next-intl";
 import branchImg from "../../../public/branch.png"
+import retail_dashboard from "../../../public/RetailSales - Age and gender dashboard.png"
 import sales_dashboard from "../../../public/sales dashboard.png"
 import worldBank from "../../../public/world bank PBI.png"
 import southAsiaKaggle from "../../../public/kaggle south asia growth.png"
@@ -145,6 +146,12 @@ export default function Home() {
   ];
 
   const portfolioAnalystBoxSteps: { img: string, header: string, content: string, link: string }[] = [
+    {
+      img: retail_dashboard.src,
+      header: "Retail Sales Analysis",
+      content: "This project analyzes buying patterns and sales trends in the retail sector, focusing on how factors such as age, gender, and seasons influence consumer behavior.",
+      link: "https://github.com/LennyMGarcia/Retail-Sales-Dashboard",
+    },
     {
       img: sales_dashboard.src,
       header: "OdooVerse-Analytics",

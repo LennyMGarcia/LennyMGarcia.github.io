@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { useTranslations } from "next-intl";
 import branchImg from "../../../public/branch.png"
+import retail_dashboard from "../../../public/RetailSales - Age and gender dashboard.png"
 import sales_dashboard from "../../../public/sales dashboard.png"
 import worldBank from "../../../public/world bank PBI.png"
 import southAsiaKaggle from "../../../public/kaggle south asia growth.png"
@@ -143,6 +144,12 @@ export default function Home() {
   ];
 
   const portfolioAnalystBoxSteps: { img: string, header: string, content: string, link: string }[] = [
+    {
+      img: retail_dashboard.src,
+      header: "Análisis de Ventas en el Sector Retail",
+      content: "Este proyecto analiza los patrones de compra y las tendencias de ventas en el sector retail, enfocado en cómo factores como la edad, el género y las estaciones influyen en el comportamiento del consumidor.",
+      link: "https://github.com/LennyMGarcia/Retail-Sales-Dashboard",
+    },
     {
       img: sales_dashboard.src,
       header: "OdooVerse-Analytics",
